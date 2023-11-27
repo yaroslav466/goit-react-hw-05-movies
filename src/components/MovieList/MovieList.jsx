@@ -11,11 +11,14 @@ const MoviesList = ({ movies, title }) => {
                     return (
                         <li key={movie.id}>
                             <Link to={`/movies/${movie.id}`} state={{ from: location }}>
-                                <img src="{
+                               <img
+                  src={
                     movie.poster_path
                       ? `https://image.tmdb.org/t/p/w300/${movie.poster_path}`
                       : 'https://upload.wikimedia.org/wikipedia/commons/0/0a/No-image-available.png'
-                  }" alt="{movie.title}" />
+                  }
+                  alt={movie.title}
+                />
                                 <h3>{movie.title}</h3>
                                 {movie.release_date && (
                                     <h4>{movie.release_date}</h4>

@@ -1,0 +1,23 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px 0 30px 0;
+    
+}
+
+.navlink{
+    flex-direction: column;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+
+.navlink:first-child{
+    margin-left: 50px;
+}
+
+.navlink:hover{
+    color: blueviolet;
+}
